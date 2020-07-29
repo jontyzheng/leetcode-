@@ -1,9 +1,11 @@
 ## 1051. Heights Checker
 
-#Tag# Array #easy#
+#Tag# Array 
+#easy#
 
 ### Question
 
+```
 Students are asked to stand *in non-decreasing order* of heights for an annual photo.
 
 Return the minimum number of students *that must move* in order for all students to be standing in non-decreasing order of height.
@@ -28,7 +30,7 @@ Example 3:
 
 Input: heights = [1,2,3,4,5]
 Output: 0
-
+```
 ---
 
 ### Analysis
@@ -69,8 +71,30 @@ Yeah, while u comparing one original one to the sorted one, how many different n
 
 So, for that, the non-decreasing order is there. And we also know, there is a method called Arrays.sort(), which makes the same order thing. Then we got the idea.
 
-1. Using the Arrays.sort() to sort the heights first. Note that the value it return is boolean, which means it do sort the original array, so, we gotta ceate a new array to put the sorted array and, save the original array, which reminds me the method called `Arrays.copyOf()`
+### Start work
+
+1. Using the `Arrays.sort()` to sort the heights first. Note that the value it return is boolean, which means it do sort the original array, so, we gotta ceate a new array to put the sorted array and, save the original array, which reminds me the method called `Arrays.copyOf()`
 So ther we go.
 2.Make sure we copy the original one to another array, just named it copyedOne, then we sort the array in the (). Then we compare them in sequence, make a counter record as soon as there is a pair not equal each other.
 
 3.Return the counter, which is the answer we need to commit. This is it.
+
+#### Code
+```java
+class Solution {
+    public int heightChecker(int[] heights) {
+        int[] copyOne = Arrays.copyOf(heights, heights.length);
+        Arrays.sort(heights);
+
+        int cnt = 0;
+        for (int i = 0; i < heights.length; i++) {
+            if (copyOne[i] != heights[i]) {
+                cnt++;
+            }
+        }
+
+        return cnt;
+    }
+}
+```
+
