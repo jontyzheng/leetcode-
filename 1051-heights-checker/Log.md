@@ -37,9 +37,9 @@ Output: 0
 
 1.title reading: The Heights Checker/array
 
-2.question description is talk about *non-deceasing order*, which means something like {1, 1, 2, 3, 4}, {2, 2, 3, 3, 6}, as long as the order is arraged like this.
+2.Description of this question is talking about *non-deceasing order*, which means something like {1, 1, 2, 3, 4}, {2, 2, 3, 3, 6}, as long as the order is arraged like this.
 
-Then there is another key words -- find the min of nums that must move, which means it's not neccessary to actually sort this array.
+Then there is another key words -- *find the min of nums that must move*, which means it's not neccessary to actually sort this array.
 
 But I gotta say the real key cue is placed at the *Example* part, more concret, the *Explanation* part.
 ```
@@ -50,14 +50,14 @@ On index 4 (0-based) we have 1 vs 3 so we have to move this student.
 On index 5 (0-based) we have 3 vs 4 so we have to move this student.
 ```
 
-At first glance, I just thought that is in real life, and All we gotta do is just ordering one man to move to another place, the direction is mostly rightward, such as {1, 1, 4, 2, 1, 3} .
+At first glance, I just thought it as in real life, and All we gotta do is just ordering one man to move to another place, the direction is mostly rightward, such as {1, 1, 4, 2, 1, 3} .
 Right? when u go the second position and u find the value doesn't meet the requirement, then u gotta move it rightward. '1', '3' are the same thing.
 
-But, when I wrote more sequence to check, I find out that not all the "min of nums that nedd to move" follow the "rightward" thing, like {1, 1, 4, 3, 1}, which min is 2, and the labor-saving way is put '1' leftward, so as '3' do.
+But, when I wrote more sequence to check, I find out that not all the "min of nums that need to move" follow the "rightward" thing, like {1, 1, 4, 3, 1}, which <I>min</I> is 2, and the labor-saving way is put '1' leftward, so as '3' do.
 
-I got little confused. U know, no need to actually sort them, all u have to do just find the times that must move to make them in non-deceasing order, right? But the uncertain direction thing kinda confused me.
+I got little confused. U know, no need to actually sort them, all u have to do just find the times they must move to make them in non-deceasing order, right? But the uncertain direction thing kinda confused me.
 
-So I turn to comments area for other voices,  most voices there are talk about the translation thing, so I just turn it into the en-version, finally I got the point.
+So I turn to comments area for other voices,  most voices there are talking about the translation thing, so I just turn it into the en-version, then I got the point.
 I mean, I finnaly figure out the Example part, which is already told us the answer.
 
 ```
@@ -67,15 +67,16 @@ On index 2 (0-based) we have 4 vs 1 so we have to move this student.
 On index 4 (0-based) we have 1 vs 3 so we have to move this student.
 ```
 
-Yeah, while u comparing one original one to the sorted one, how many different nums pair u find, how many times u gotta exchange.
+Yeah, while u comparing one original one to the sorted one, how many different pair u find, how many times u need to move.
 
-So, for that, the non-decreasing order is there. And we also know, there is a method called Arrays.sort(), which makes the same order thing. Then we got the idea.
+So, for that, the non-decreasing order is there. And we also know, there is a method called `Arrays.sort()`, which makes the same order thing. Then we got the idea.
 
 ### Start work
 
-1. Using the `Arrays.sort()` to sort the heights first. Note that the value it return is boolean, which means it do sort the original array, so, we gotta ceate a new array to put the sorted array and, save the original array, which reminds me the method called `Arrays.copyOf()`
-So ther we go.
-2.Make sure we copy the original one to another array, just named it copyedOne, then we sort the array in the (). Then we compare them in sequence, make a counter record as soon as there is a pair not equal each other.
+1. Using the `Arrays.sort()` to sort the <I>heights</I> firstly. Note that the value it returns is boolean, which means it do sort the original array. So, we gotta ceate a new array to put the sorted one and, save the original array, which reminds me of the method called `Arrays.copyOf()`
+So there we go.
+
+2.Make sure we copy the original one to another array, just named it copyedOne, then we sort the array in the (). Then we compare them in sequence, make a counter record as soon as a pair not equal each other is found.
 
 3.Return the counter, which is the answer we need to commit. This is it.
 
