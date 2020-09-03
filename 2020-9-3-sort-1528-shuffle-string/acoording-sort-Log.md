@@ -18,7 +18,7 @@ tag#sort#
 示例 1：
 ```
 
-https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-9-3-sort-1528-shuffle-string/q1.jpg
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-9-3-sort-1528-shuffle-string/q1.jpg)
 
 ```
 输入：s = "codeleet", indices = [4,5,6,7,0,2,1,3]
