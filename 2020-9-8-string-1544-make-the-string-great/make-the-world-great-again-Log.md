@@ -74,7 +74,7 @@ s 只包含小写和大写英文字母
 
 关键是确定相邻两个字符的 acsii 码值之间的差值不能是刚好两个同字母的相对大小写.
 
-
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-9-8-string-1544-make-the-string-great/ascii.jpg)
 
 由 acsii 码值的表可得, 如果两个字符的差值为 `22` 时, 这个就可以当作是判断是否需要删除**这一对**的判断条件. 也就是属于需要删除的情况.
 
