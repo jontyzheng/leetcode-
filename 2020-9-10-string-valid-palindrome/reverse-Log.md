@@ -63,25 +63,36 @@ tag#string#
 ```java
 class Solution {
     public boolean isPalindrome(String s) {
+        // 本题中，我们将空字符串定义为有效的回文串。
         if (s == null) return true;
+        //  1. 不区分大小写, 无论字符串大小写都属于同一字符, 统一变小写方便后面匹配
         s = s.toLowerCase();
         int l = s.length();
+        //  2. 新建一个与目标字符串相同长度的 StringBuilder 对象
         StringBuilder str = new StringBuilder(l);
+        //  3. 遇到数字或者(小写)字母的时候追加, 构建目标 StringBuilder (此处只需要判断小写字母)
         for (char c : s.toCharArray()) {
             if ((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z')) {
                 str.append(c);
             }
         }
+        //  4. 问, StringBuilder 内的字符串与 reverse 后的字符串值相等不相等.
         return str.toString().equals(str.reverse().toString());
     }
 }
 ```
 
-> 摘自评论区
+分析:
+
+两大步: 
+
+1.构建字符串中由字母构成的 StringBuidler;
+
+2.反转字符串判断是否值相等.
+
+**因为忽略大小写, 所以那里面原大写的转对应的小写, 然后再当作小写字母之间的判等也没关系.**
 
 
-
-> 时间有限, 就只能做到这里了.
 
 ##### commit 1
 
@@ -134,12 +145,4 @@ class Solution {
 > ```
 >
 > 中间的部分: 偶数位的比较.
-
-commit 2
-
-commit 3
-
-
-
-
 
