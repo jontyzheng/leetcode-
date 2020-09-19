@@ -72,15 +72,16 @@ b. 溢出, 可以通过对 long 类型数据取 int, 看是否约掉其它数字
 #### Code	
 
 ```java
-class solution {
+class Solution {
     public int reverse(int x) {
         long n = 0;
-        while (x != 0) {
-            n = x%10 + n*10;
-            x = x/10;
+        while ( x!= 0) {
+            n = n*10 + x%10;    //   n*10 把数值左移
+                                //   x%10 取下最后一位掉下来的数字
+            x = x/10;           //  x 取 x/10
         }
         return (int)n==n? (int)n:0;
-    }        
+    }
 }
 ```
 
