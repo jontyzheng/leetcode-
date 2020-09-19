@@ -78,7 +78,7 @@ class Solution {
         while ( x!= 0) {
             n = n*10 + x%10;    //   n*10 把数值左移
                                 //   x%10 取下最后一位掉下来的数字
-            x = x/10;           //  x 取 x/10
+            x = x/10;           //   x 取 x/10
         }
         return (int)n==n? (int)n:0;
     }
