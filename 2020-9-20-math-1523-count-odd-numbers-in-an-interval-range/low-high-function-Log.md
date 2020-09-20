@@ -39,7 +39,7 @@ tag#math#
 
 解题分析: tag 为 math, 就肯定找规律的题型. 分析如下图.
 
-
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-9-20-math-1523-count-odd-numbers-in-an-interval-range/low-high-function-analysis.PNG)
 
 #### Code
 
