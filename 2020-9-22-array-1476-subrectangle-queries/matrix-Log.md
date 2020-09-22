@@ -96,6 +96,10 @@ cols == rectangle[i].length
 
 
 
+图示:
+
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-9-22-array-1476-subrectangle-queries/matrix.PNG)
+
 #### Code
 
 ```java
@@ -134,7 +138,9 @@ class SubrectangleQueries {
 
 
 
-感觉这一道 medium 的没那么难.
+感觉这一道 medium 的不难.
+
+只需将原矩阵按照给定的上下界用新值替换就可以了. 就是形式不一样, 这次是实现一个类.
 
 
 
