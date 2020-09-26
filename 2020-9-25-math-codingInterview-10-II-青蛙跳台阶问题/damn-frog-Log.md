@@ -1,4 +1,4 @@
-#### Question 青蛙跳台阶问题
+#### Question [青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/)
 
 tag#剑指 offer# #math#
 
@@ -29,7 +29,7 @@ tag#剑指 offer# #math#
 
 ```
 
-注意：本题与主站 70 题相同：https://leetcode-cn.com/problems/climbing-stairs/
+注意：本题与主站 70 题相同：[70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 
 #### Analysis
 
@@ -39,22 +39,28 @@ tag#剑指 offer# #math#
 
 #### Code
 
-来自评论区大佬
+参考评论区@面条的方法
+
+第 n 个台阶只能从第n-1个台阶或者n-2个台阶上来. 到第n-2个台阶的走法 + 第n-1个台阶的走法.
+
+已经知道了第1个和第2个台阶的走法, 一路加上去.
+
+(斐波那契数列/兔子数列)
 
 ```java
-class Solution {
-    // 执行用时 :0 ms, 在所有 Java 提交中击败了100.00%的用户内存消耗 :
-    // 33.2 MB, 在所有 Java 提交中击败了70.25%的用户
+class Solution {        
     public int climbStairs(int n) {
+        // 执行用时：0 ms, 在所有 Java 提交中击败了100.00%的用户
+        // 35.8 MB, 在所有 Java 提交中击败了10.71%的用户
         if(n<=2){
-            return n;
+            return n;   /*包括了 0,1,2 的情况*/
         }
-        int i1 = 1;
-        int i2 = 2;
+        int i1 = 1;     //  i1: 跳到第 n-2 个台阶的跳法
+        int i2 = 2;     //  i2: 跳到第 n-1 个台阶的跳法
         for(int i=3;i<=n;i++){
-            int temp = i1+i2;
-            i1 = i2;
-            i2 = temp;
+            int temp = i1+i2;   //  爬阶梯的跳法 = 爬到前一个阶梯的跳法 + 爬到前两个阶梯的跳法之和
+            i1 = i2;    //  i2 作为新的 i1
+            i2 = temp;  //  当前台阶的跳法作为新的 i2
         }
         return i2;
     }
@@ -63,7 +69,7 @@ class Solution {
 
 
 
+结论:
 
-
-
+多为台阶着想.
 
