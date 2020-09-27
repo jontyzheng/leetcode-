@@ -50,7 +50,7 @@ class Solution {
         if (len < 2 || nums[0] > target)
             return null;
         int mid = 0;
-        // 因为两数之和的加数只可能在小于和的情况中出现, 所以只需为它们建立字典索引.
+        // 只给小于 target 的元素建立字典索引.
         for (int i=0 ;i<len; i++) {
             if (nums[i] < target) {
                 map.put(nums[i], target-nums[i]);
