@@ -35,6 +35,10 @@ tag#剑指 offer# #array#
 
 即假设两个加数之和确定, 一个加数的差值等于差值的差值. 在以加数为 key, 差值为 value 的字典中, 总可以找到 value 对应的另一组键值对.
 
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-9-27-array-interview-57-%E5%92%8C%E4%B8%BAs%E7%9A%84%E4%B8%A4%E4%B8%AA%E6%95%B0%E5%AD%97/find-both-addends.PNG)
+
+进一步简化:
+
 由于数组元素都为正整数, 加数不可能为负数, 所以任意一个加数都不可能超过两数之和(目标值), 所以只需要给小于目标值的元素建立字典. 特别是已知升序的情况下, 遇到大于两数之和的数值就不能管它们了.
 
 #### Code
