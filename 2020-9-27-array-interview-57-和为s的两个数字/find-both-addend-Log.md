@@ -50,7 +50,7 @@ class Solution {
         if (len < 2 || nums[0] > target)
             return null;
         int mid = 0;
-        // 只给小于 target 的元素建立字典索引.
+        // 只有在小于 target 的元素中才有可能找到加数, 所以只需要给它们建立字典索引.
         for (int i=0 ;i<len; i++) {
             if (nums[i] < target) {
                 map.put(nums[i], target-nums[i]);
