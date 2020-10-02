@@ -130,9 +130,7 @@ public class Solution {
 >
 > 11111111111111111111111111111101 **根本无法用 int 表示**, 会被当成一个 long 值处理. 然后提醒数值过大. 
 
-
-
-
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-10-2-binary-interview-15-%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/bad-test.jpg)
 
 ##### commit 3
 
