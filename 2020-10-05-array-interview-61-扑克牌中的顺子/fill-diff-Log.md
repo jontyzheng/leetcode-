@@ -66,14 +66,14 @@ class Solution {
                     isStraight = false;
                     break;
                 }     
-                // 差值是否大于 1
+                // 先看判断相邻两项的差值是否大于 1
                 if (diff > 1) {                    
-                    // 差值是否大于前面 0 的个数+1 
+                    // 再看前面的 0 够不够填: diff <= count+1 
                     if (diff > (count+1)) {
                         isStraight = false;
                         break;  
                     }
-                    // 是的话, 减去 diff - 1 个 count
+                    // 够的话每次减去 (diff - 1) 个 0
                     int s = 1;
                     while (s<diff) {
                         count--;
