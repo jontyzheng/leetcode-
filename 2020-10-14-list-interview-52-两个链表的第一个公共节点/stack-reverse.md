@@ -36,7 +36,7 @@ tag#剑指# #单链表#
 
 示例 3：
 
-![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-10-14-list-interview-52-%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%85%AC%E5%85%B1%E8%8A%82%E7%82%B9/160_example_2.png)
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-10-14-list-interview-52-%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%85%AC%E5%85%B1%E8%8A%82%E7%82%B9/160_example_3.png)
 
 输入：intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
 输出：null
