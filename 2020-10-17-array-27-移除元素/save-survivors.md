@@ -78,7 +78,7 @@ for (int i = 0; i < len; i++) {
 
 因为题目只说了 O(1) 的限制, 并没有规定说不能用 T(n), 所以就多用了几次 for 循环. 加上, 零零散散的计数器变量又不影响空间复杂化度的数量级.
 
-
+[](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-10-17-array-27-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0/save-data-behind-booms.jpg)
 
 #### Code
 
