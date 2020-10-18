@@ -42,6 +42,8 @@ tag#字符串# #middle#
 
 所以, 根据题目的要求, 我理解成一次性最多可以吃多少个字母. 是的, 有点像那个**吃豆人**.
 
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-10-18-string-3-%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/pac-man.png)
+
 遇到**没见过的**才吃, 看最后吃的最长的豆子.
 
 判含就很自然想到了 Collection 的 contains, 所以就想到了 List. 另外, 一方面用 contains 对集合内的数据进行判含, 一方面用 add 吃豆子. 
