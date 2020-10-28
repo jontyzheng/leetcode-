@@ -54,6 +54,8 @@ tag#矩阵#
 
 #### Code
 
+假设坐标含有和 0 项 的行列相同的横纵坐标就置作 0.
+
 commit 1
 
 ```java
@@ -86,6 +88,12 @@ class Solution {
 }
 ```
 
+> 假设是因为 map 可以根据 key 找 value, 也可能根据 value 找 key.
+>
+> 且超时时间是因为经过了两轮循环.
+
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-10-28-matrix-%E9%9D%A2%E8%AF%95%E9%A2%98-01-08-%E9%9B%B6%E7%9F%A9%E9%98%B5/set-store.PNG)
+
 
 
 commit 2
@@ -117,6 +125,10 @@ class Solution {
 }
 ```
 
+> 改成 set, 并且将第二轮匹配的循环合并到第一轮添加 0 元素行列的循环里.
+
+
+
 未通过用例:
 
 ```
@@ -125,7 +137,13 @@ class Solution {
 1,1,1	-	1,0,1
 ```
 
+![](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-10-28-matrix-%E9%9D%A2%E8%AF%95%E9%A2%98-01-08-%E9%9B%B6%E7%9F%A9%E9%98%B5/the-former-lost-check.PNG)
+
 排在前面的就没有被检验到
+
+
+
+
 
 commit 3
 
@@ -186,6 +204,10 @@ class Solution {
 2.然后拿 (x,y) 的横坐标到行列表中匹配, 纵坐标到行列表匹配.
 
 3.只要是有一个匹配, 就应该被置 0.
+
+![](https://github.com/jontyzheng/leetcode-journal/blob/master/2020-10-28-matrix-%E9%9D%A2%E8%AF%95%E9%A2%98-01-08-%E9%9B%B6%E7%9F%A9%E9%98%B5/where-the-question-is.PNG)
+
+
 
 commit 4
 
