@@ -38,24 +38,38 @@ tag#剑指 offer# #string#
 
 #### Analysis
 
-由例子可得, 题目是将数组中的字符串顺序颠倒过来. 
+由例子可得, 题目想要将字符串中各个字符串的顺序颠倒过来. 
 
 ```
 输入: "the sky is blue"
 输出: "blue is sky the"
 ```
 
-这一点可以从后往前遍历然后追加实现.
+这一点可以先将原字符串按照空格拆成各个字符串, 变成一个字符串数组后, 再**将数组从后往前遍历**然后追加实现.
 
-如果是去掉单词空格的话, 肯定是要用到 trim. 针对 split 只是按照特定字符 (空格算一个字符) 分离字符串, 如果是连续多个空格的话, 空格也会被当作一个数组项返回. 这一点可以通过在追加前加上一个判定语句来消除这一点.
+第二个点就是最后的字符串前后不能由多余的空格.
 
-例子:
+> 如果是去掉单词空格的话, 可以用 `trim` 瘦身. 
+>
+> `trim` 可以掐头去尾.
+>
+> 然而, 由于这里字符串要求的最终结果头和尾都不能包含多余的空格. 所以可以提前掐掉字符串前后可能出现的空格.
+>
+> 再变数组.
 
-SplitTest.java
+第三个点就是想办法将数组中间多余的空格变成 1 个.
+
+因为 `split` 只是按照特定字 (空格也算其中一个) 分离字符串: 如果是连续多个空格的话, 空格也会被当作一个数组项返回. 
+
+这一点可以通过在追加的前面加上一个判定语句来消除, 如果是空格不追加上.
+
+这样, 前面 `trim` 留下的空格组成的数组项也可以抵消掉了.
+
+
+
+##### split 的例子
 
 ```java
-package com.crazy.string;
-
 /**
  * split(" ") 以一个空格分隔字符串
  * @author Jonty Zheng
@@ -63,14 +77,16 @@ package com.crazy.string;
 
 public class SplitTest2 {
     public static void main(String[] args) {
-        String s = "a good   example";
+        String s = "a split   example";
         String[] res = s.split(" ");
+        System.out.println();
         int i = 0;
         for (String ss:res) {
-            System.out.println("第 i 项:" + ss + ",");
+            System.out.println("第 " + i +  " 个字符串为:" + ss);
             i++;
         }
-
+        System.out.println("第 2 个字符串的长度: " + res[2].length());      
+        /*空格字符串的长度*/
     }
 }
 
@@ -79,18 +95,22 @@ public class SplitTest2 {
 运行结果:
 
 ```
-第 i 项:a,
-第 i 项:good,
-第 i 项:,
-第 i 项:,
-第 i 项:example,
+第 0 个字符串为:a
+第 1 个字符串为:split
+第 2 个字符串为:
+第 3 个字符串为:
+第 4 个字符串为:example
 ```
 
+> 由最后一行可以看出, 所谓的空格字符串实际上也是长度为 0.
+>
+> 所以判定的条件是与("")匹配.
 
 
 
+需要的注意就是, 因为是<u>每追加一个字符串, 接着追加一个空格</u>.
 
-需要的注意就是最后记得将最后一次追加的空格给"掐头去尾"掉. 当然, 开头也需要. 针对第二个测试用例所示.
+在最后记得将最后一次追加的空格给"掐"掉. 当然, 开头也需要. 针对第二个测试用例所示.
 
 
 
@@ -103,22 +123,21 @@ class Solution {
     public String reverseWords(String s) {
         //执行用时：1 ms, 在所有 Java 提交中击败了100.00%的用户
         //内存消耗：39.1 MB, 在所有 Java 提交中击败了30.20%的用户
-        String[] strArr = s.trim().split(" ");
+        String str = s.trim();
+        String[] strArr = str.split(" ");
         int len = strArr.length;
         
         StringBuilder resSbu = new StringBuilder();
         for (int i=len-1; i>=0; i--) {
-            if (!strArr[i].equals("")) {       //  加一个判断条件
-                String ss = strArr[i].trim();   //  将单词前后的空格掐头去尾
+            if (!strArr[i].equals("")) {        //  由 split 的例子可得
+                String ss = strArr[i];  
                 resSbu.append(ss).append(" ");
             }            
         }
-        return resSbu.toString().trim();    //  去掉最后一个追加的空格
+        return resSbu.toString().trim();    	//  最后再去掉最后一个位置上的空格
     }
 }
 ```
-
-
 
 
 
