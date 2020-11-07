@@ -58,7 +58,7 @@ s 由数字 0-9 和字符 '+'、'-'、'*'、'/'、'('、')' 组成
 
 给出的是一个规则的带括号表达式. 其它字符可以忽略不记.
 
-![img{20%}](https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-07-string-1614-%E6%8B%AC%E5%8F%B7%E7%9A%84%E6%9C%80%E5%A4%A7%E5%B5%8C%E5%A5%97%E6%B7%B1%E5%BA%A6/cnt-continuous-l-bracket.jpg)
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-07-string-1614-%E6%8B%AC%E5%8F%B7%E7%9A%84%E6%9C%80%E5%A4%A7%E5%B5%8C%E5%A5%97%E6%B7%B1%E5%BA%A6/cnt-continuous-l-bracket.jpg" style="zoom:20%;" />
 
 假如这样一道例子放在你面前, 你会怎么计算它?
 
