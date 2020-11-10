@@ -95,6 +95,36 @@ s 和 t 都只包含数字字符，即 '0' 到 '9' 。
 
 #### Code
 
+```java
+class Solution {
+    public boolean isTransformable(String s, String t) {
+        if (s.length() != t.length())
+            return false;
+            char[] chars1 = s.toCharArray();
+            char[] chars2 = t.toCharArray();
+            List<Integer>[] pos = new ArrayList[10];    //  数组的每一项是一个整数列表
+            for (int i = 0; i <= 9; i++)
+                pos[i] = new ArrayList<>();     //  给每一个列表构造对象
+            for (int i = 0; i < chars1.length; i++) {
+                pos[chars1[i] - '0'].add(i);    //  
+            }
+
+            int[] size = new int[10];
+            for (char c : chars2) {
+                int cur = c - '0';
+                if (size[cur] >= pos[cur].size())   return false;
+                int tmp = pos[cur].get(size[cur]);
+                for (int i = 0; i < cur; i++) {
+                    if (size[i] < pos[i].size() && pos[i].get(size[i]) <= tmp)
+                        return false;
+                }
+                size[cur]++;
+            }
+            return true;
+    }
+}
+```
+
 
 
 
