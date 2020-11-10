@@ -73,13 +73,23 @@ s 和 t 都只包含数字字符，即 '0' 到 '9' 。
 
 变化方式只能通过升序, 那么要想跳到前面的位置, 那么它前面一定要有比它大的数, 这样, 它就能因为**升序**"被迫"调到前面.
 
-根据评论区的提示, 序列的数组有且只有从 0 到 9 开始选. 也就是说前面的条件可以换成 (n, 9] 在 s 中的最后位置排在 n 的前面. 即 position(number, 9) < position(n).
+根据评论区的提示, 序列的数组有且只有从 0 到 9 开始选. 也就是说前面的条件可以换成 (n, 9] 在 s 中的顺序排在 n 的前面. 即 position(number, 9) < position(n).
+
+小结: 从后往前调, 大数在前面
 
 <img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-09-string-1585-%E6%A3%80%E6%9F%A5%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%8E%92%E5%BA%8F%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%BE%97%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6/analysis-1.jpg" width="50%">
 
+往后调的条件就是 0~9 中比它小的数排在它后面. position(0, number) > position(n). 如示例 2 中的 `8`.
 
+小结: 从前往后调, 小数在后面.
 
 <img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-09-string-1585-%E6%A3%80%E6%9F%A5%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E6%8E%92%E5%BA%8F%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%BE%97%E5%88%B0%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%AD%97%E7%AC%A6/analysis-3.jpg" width="50%">
+
+
+
+疑问: 问题就是题目的例子 3 中的 `5` 显示的好像不一样: 
+
+应该从后往前调. 
 
 
 
