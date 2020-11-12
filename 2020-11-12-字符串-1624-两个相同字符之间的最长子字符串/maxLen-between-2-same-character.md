@@ -56,6 +56,8 @@ s 只含小写英文字母
 
 ###### 【详解版】
 
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-12-%E5%AD%97%E7%AC%A6%E4%B8%B2-1624-%E4%B8%A4%E4%B8%AA%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E4%B9%8B%E9%97%B4%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2/maxLen-%E8%8D%89%E7%A8%BF.jpg" width="50%">
+
 题目意思是, 给定一个字符串, 找出两个相同字符中最多隔了多少个字符.
 
 1.找字符串两头相同字符的坐标.
