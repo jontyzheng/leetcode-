@@ -80,7 +80,7 @@ s[i] = 'L' 或 'R'
 
 ```java
 class Solution {
-    //执行用时：4 ms, 在所有 Java 提交中击败了7.05%的用户
+    //执行用时：4 ms
     public int balancedStringSplit(String s) {
         if (s.length() == 1)
             return 0;
