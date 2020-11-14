@@ -44,6 +44,22 @@ words[i] 仅包含小写英文字母。
 
 #### Analysis
 
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-14-%E5%AD%97%E7%AC%A6%E4%B8%B2-1408-%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D/present-sub.jpg" width="50%"/>
+
+
+
+
+
+###### 【浓缩版】
+
+只要当前字符串是其它字符串的子串就可以了
+
+
+
+
+
+###### 【详细版】
+
 问题要求: 给定一组字符串, 已知其中有几个字符串是其它字符串的一个子串, 字符串数组可以保证字符串不重复, 现要找出这些可以组成其它字符串的**项**.
 
 1.字符串相互比较有 API `contains(String str)`;
@@ -87,7 +103,7 @@ class Solution {
 
 ##### 	【本题小结】
 
-常规思路可解
+常规思路
 
 
 
