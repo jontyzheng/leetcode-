@@ -52,6 +52,7 @@ rounds[i] != rounds[i + 1] ，其中 0 <= i < m
 
 #### Analysis
 
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-08-23-%E6%95%B0%E7%BB%84-5495-%E5%9C%86%E5%BD%A2%E8%B5%9B%E9%81%93%E4%B8%8A%E7%BB%8F%E8%BF%87%E6%AC%A1%E6%95%B0%E6%9C%80%E5%A4%9A%E7%9A%84%E6%89%87%E5%8C%BA/3rd45e.jpg" width="50%">
 
 
 
