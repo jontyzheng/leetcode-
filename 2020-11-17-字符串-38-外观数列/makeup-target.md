@@ -81,7 +81,15 @@ countAndSay(4) = 读 "21" = 一 个 2 + 一 个 1 = "12" + "11" = "1211"
 
 忽然转念一想, 我干嘛不拿它当作是一个小人, 就像小时候晚的坦克大战或者雪人兄弟一样, 一路上会碰到各种关卡, 各种判断条件, 然后利用手柄操控它, 作出相应的动作.
 
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-17-%E5%AD%97%E7%AC%A6%E4%B8%B2-38-%E5%A4%96%E8%A7%82%E6%95%B0%E5%88%97/battle-city.png">
+
+
+
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-17-%E5%AD%97%E7%AC%A6%E4%B8%B2-38-%E5%A4%96%E8%A7%82%E6%95%B0%E5%88%97/snowbros.png" width="27%">
+
 然后, 就整理出了构造这么一个列表所需要的流程地图.
+
+
 
 ###### 流程图
 
@@ -130,6 +138,8 @@ countAndSay(4) = 读 "21" = 一 个 2 + 一 个 1 = "12" + "11" = "1211"
 当然, 有一个缺点就是不管 n 是多少都需要用同样多的时间.
 
 
+
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-17-%E5%AD%97%E7%AC%A6%E4%B8%B2-38-%E5%A4%96%E8%A7%82%E6%95%B0%E5%88%97/makeup-map.PNG" width="70%">
 
 #### Code
 
