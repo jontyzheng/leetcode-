@@ -48,7 +48,7 @@ tag##
 
 ###### 对照表
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-18-%E5%AD%97%E7%AC%A6%E4%B8%B2-804-%E5%94%AF%E4%B8%80%E6%91%A9%E5%B0%94%E6%96%AF%E5%AF%86%E7%A0%81%E8%AF%8D/morse.jpg" width="50%">
 
 
 
@@ -58,7 +58,9 @@ tag##
 
 为什么题目会说"可以从中识别出多少个不同的单词"? 从给出的例子结合"对照表", 翻译过来后, 我们可以看到毕竟所有组合有且仅有 `.` 和 `-` 组合而成, 多少都会有可能这个字母结尾的, 和后面字母开头拼接后, 刚好和另外一个虽然不是同一个单词, 但是同一个序列. 得到的重复序列, 就不计入最后数目.
 
-<img src="" width="70%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-18-%E5%AD%97%E7%AC%A6%E4%B8%B2-804-%E5%94%AF%E4%B8%80%E6%91%A9%E5%B0%94%E6%96%AF%E5%AF%86%E7%A0%81%E8%AF%8D/morse-table.png" width="70%">
+
+
 
 ##### 3.怎么下手?
 
