@@ -186,6 +186,26 @@ class Solution {
 
 
 
+```java
+class Solution {
+    public String reverseStr(String s, int k) {
+        char[] chars = s.toCharArray();
+
+    }
+
+    public void reverse(int[] a, int from, int to) {    
+        for (int i = from, j = to; i < j; i++, j--) {
+            sbu.append(a[i]);
+        }
+        
+    }
+}
+```
+
+
+
+
+
 #### Code
 
 
