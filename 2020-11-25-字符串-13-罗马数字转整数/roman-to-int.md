@@ -239,3 +239,121 @@ class Solution {
 
 ##### 测试用例pk
 
+###### 1
+
+> 测试用例分析:
+>
+> ```
+> 输入：
+> "III"
+> 输出：
+> 2
+> 预期：
+> 3
+> ```
+
+```java
+class Solution {
+    public int romanToInt(String s) {
+        //Stack<Character> charStack = new Stack<>();
+        //stack<Integer> sumStack = new Stack<>();
+        char[] chars = s.toCharArray();
+        int len = chars.length;
+        Map<Character, Character> groupMap = makeupMap();        
+        Map<String, Integer> valueMap = valueMap();
+        Map<Character, Integer> unitMap = unitMap();
+        int sum = 0;
+        for (int i = len - 1; i > 0; i--) {
+            char present = chars[i];
+
+            if (i != 0) {                
+                char former = chars[i - 1];     /*拿到前面的字符*/              
+                charStack.push(present);   
+                charStack.push(former);             
+                StringBuilder tempBuilder = new StringBuilder();
+                tempBuilder.append(present).append(former);
+                String tempGroup = tempBuilder.toString();  /*假设双拼*/
+                if (groupMap.get(tempGroup) != null) {
+                    int x = valueMap.get(tempGroup);
+                    charStack.pop();
+                    charStack.pop();
+                    sum += x;
+                    //stack.push(sum);
+                    i--;
+                }
+                else {
+                    if (charStack.isEmpty() == false) {
+                        char presentChar = charStack.pop();
+                        int x = unitMap.get(presentChar);
+                        sum += x;
+                    }
+                    else
+                        sum += unitMap.get(present);
+                }
+            }
+            else {
+                //charStack.isEmpty() == false
+                char inside = charStack.pop();                    
+                int x = valueMap.get(inside);
+                sum += x;                                            
+            }
+        }
+        return sum;
+    }    
+
+    /*组合map*/
+    public Map makeupMap() {
+        Map<Character, Character> map = new HashMap<>();
+        map.put('I', 'V');  //  4
+        map.put('I', 'X');  //  9
+        map.put('X', 'L');  //  40
+        map.put('X', 'C');  //  90
+        map.put('C', 'D');  //  400
+        map.put('C', 'M');  //  900
+        return map;
+    }
+
+    /*面值map*/
+    public Map valueMap() {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("IV", 4);
+        map.put("IX", 9);
+        map.put("XL", 40);
+        map.put("XC", 90);
+        map.put("CD", 400);
+        map.put("CM", 900);        
+        return map;
+    }
+
+    /*单位map*/
+    public Map unitMap() {
+        Map<Character, Integer> map = new HashMap<>();
+        map.put('I', 1);
+        map.put('V', 5);
+        map.put('X', 10);
+        map.put('C', 100);
+        map.put('D', 500);
+        map.put('M', 1000);
+        return map;
+    }
+}
+```
+
+> 循环判断的时候当 i == 1 的时候就跳过了, 没有累加上倒数第 2 个 I 的值.
+
+
+
+###### 2
+
+```
+makeupMap 后的 map 长度只有 3 而不是完整的 9
+```
+
+> 问题出现在makeup 构造配对 map 的时候
+>
+> 我原先是想要一个放一个, 一个放另外一个, 然后通过是否可以通过一个拿另一个判断它们是否属于"特殊情况"的组合搭配.
+>
+> 但是 map 中 key 是唯一的.
+>
+> 比如说 I-V, I-X 就不会保存一个, 所以 4, 9, 40, 90, 400, 900 makeup 出来的长度才会只有 3.
+
