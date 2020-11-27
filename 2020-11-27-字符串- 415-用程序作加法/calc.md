@@ -27,7 +27,7 @@ num1 和num2 都不包含任何前导零
 
 #### Analysis
 
-<img src="">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-27-%E5%AD%97%E7%AC%A6%E4%B8%B2-%20415-%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%BD%9C%E5%8A%A0%E6%B3%95/%E5%88%86%E6%9E%90%E8%BF%87%E7%A8%8B.PNG">
 
 
 
