@@ -45,7 +45,7 @@ tag##
 
 如果, 遇到这么两端不对称的位置, 那么多余的那个字符肯定就出现在这中间.
 
-<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-28-%E5%AD%97%E7%AC%A6%E4%B8%B2-680-%E9%AA%8C%E8%AF%81%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2-%E2%85%A1/palidrome.PNG" width="80%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-28-%E5%AD%97%E7%AC%A6%E4%B8%B2-680-%E9%AA%8C%E8%AF%81%E5%9B%9E%E6%96%87%E5%AD%97%E7%AC%A6%E4%B8%B2-%E2%85%A1/palidrome.PNG" width="60%">
 
 但中间可能是 `ddz` 又有可能是 `zzd` 两种都可以满足要求. **两种都是对的**!
 
