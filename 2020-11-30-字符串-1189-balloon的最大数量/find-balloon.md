@@ -14,16 +14,20 @@ tag##
 
 示例 1：
 
-<img src="">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-30-%E5%AD%97%E7%AC%A6%E4%B8%B2-1189-balloon%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B0%E9%87%8F/1536_ex1_upd.jpeg">
 
 输入：text = "nlaebolko"
 输出：1
+
+
 示例 2：
 
-<img src="">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-30-%E5%AD%97%E7%AC%A6%E4%B8%B2-1189-balloon%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B0%E9%87%8F/1536_ex2_upd.jpeg">
 
 输入：text = "loonbalxballpoon"
 输出：2
+
+
 示例 3：
 
 输入：text = "leetcode"
@@ -54,7 +58,7 @@ I. "两个容器"
 
 将字符串当作一个容器, 把组成 balloon 所需要的字母当成一个容器. 比较包含, 每匹配一次计数几一次, 并将已经匹配的移除出去, 重复此操作.
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-11-30-%E5%AD%97%E7%AC%A6%E4%B8%B2-1189-balloon%E7%9A%84%E6%9C%80%E5%A4%A7%E6%95%B0%E9%87%8F/container-bottle.PNG" width="50%">
 
 II. "最小公X数"
 
