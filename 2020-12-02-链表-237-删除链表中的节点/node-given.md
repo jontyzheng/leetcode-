@@ -12,7 +12,7 @@ tag##
 
 现有一个链表 -- head = [4,5,1,9]，它可以表示为:
 
-
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-02-%E9%93%BE%E8%A1%A8-237-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/237_example.png">
 
  
 
@@ -89,5 +89,5 @@ class Solution {
 
 前后强烈的反差.
 
-
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-02-%E9%93%BE%E8%A1%A8-237-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9/2020-12-02_21-05-15.jpg" width="50%">
 
