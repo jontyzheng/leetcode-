@@ -46,7 +46,11 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 
 通过草稿可知, 除了 1 以外, 中间结点总是 结点数/2 的位置. 如图
 
-<img src="" width="80%">
+
+
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-03-%E9%93%BE%E8%A1%A8-876-%E9%93%BE%E8%A1%A8%E7%9A%84%E4%B8%AD%E9%97%B4%E7%BB%93%E7%82%B9/middle.PNG" width="60%">
+
+
 
 所以, 结合另外一道找第 k 个结点的题目可以确定目标结点.
 
