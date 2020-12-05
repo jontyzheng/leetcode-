@@ -25,7 +25,7 @@ tag##
 
 #### Analysis
 
-<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-15-%E9%93%BE%E8%A1%A8-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/2020-12-05_21-58-32.jpg">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-05-%E9%93%BE%E8%A1%A8-206-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8/2020-12-05_21-58-32.jpg">
 
 
 
