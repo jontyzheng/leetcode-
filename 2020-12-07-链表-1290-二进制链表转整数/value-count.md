@@ -17,7 +17,7 @@ tag#位运算的活用#
 
 ```
 
-<img src="" >
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-07-%E9%93%BE%E8%A1%A8-1290-%E4%BA%8C%E8%BF%9B%E5%88%B6%E9%93%BE%E8%A1%A8%E8%BD%AC%E6%95%B4%E6%95%B0/graph-1.png" >
 
 ```
 输入：head = [1,0,1]
@@ -193,7 +193,7 @@ class Solution {
 
 
 
-#### 本期发现					
+#### 本期leetcode				
 
 #位运算符新用#
 
