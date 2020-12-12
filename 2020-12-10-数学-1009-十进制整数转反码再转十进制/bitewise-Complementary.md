@@ -211,7 +211,7 @@ class Solution {
 
 图示
 
-<img src="" width="">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-10-%E6%95%B0%E5%AD%A6-1009-%E5%8D%81%E8%BF%9B%E5%88%B6%E6%95%B4%E6%95%B0%E7%9A%84%E5%8F%8D%E7%A0%81/draft.PNG" width="60%">
 
 每一步都会移位, 每一步都会加上当前位数. 而 0 可以忽略不加.
 
