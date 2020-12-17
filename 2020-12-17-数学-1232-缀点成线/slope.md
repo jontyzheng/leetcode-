@@ -17,7 +17,7 @@ tag##
 
 ```
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-17-%E6%95%B0%E5%AD%A6-1232-%E7%BC%80%E7%82%B9%E6%88%90%E7%BA%BF/untitled-diagram-1.jpg" width="50%">
 
 
 
@@ -28,7 +28,7 @@ tag##
 
 ```
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-17-%E6%95%B0%E5%AD%A6-1232-%E7%BC%80%E7%82%B9%E6%88%90%E7%BA%BF/untitled-diagram-2.jpg" width="50%">
 
 ```
 输入：coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]
@@ -129,6 +129,10 @@ class Solution {
 
 ##### I.整数的除法取整
 
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-17-%E6%95%B0%E5%AD%A6-1232-%E7%BC%80%E7%82%B9%E6%88%90%E7%BA%BF/slope1.PNG" width="50%">
+
+
+
 ```java
 class Solution {
     public boolean checkStraightLine(int[][] coordinates) {
@@ -171,6 +175,8 @@ class Solution {
 >
 > k<sub>0</sub> 为 1, (4-2)/(3/1) = 1 (1.5 被截取) 导致相等, 没有判断出来. 所以造成会返回 true.
 
+
+
 ###### 方法: 修改斜率的计算公式
 
 修改 deltaY 和 deltaX 的接收类型, 浮点数之间的运算可以得到除法额的完整小数.
@@ -180,6 +186,10 @@ class Solution {
 
 
 ##### II.分母为零的规则
+
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-17-%E6%95%B0%E5%AD%A6-1232-%E7%BC%80%E7%82%B9%E6%88%90%E7%BA%BF/slope2.PNG" width="50%">
+
+
 
 ```java
 class Solution {
@@ -224,6 +234,8 @@ Line 6: java.lang.ArithmeticException: / by zero
 >
 > (1-0) / (0 - 0)
 
+
+
 ###### 方法: 分情况讨论
 
 已知两点坐标求斜率没有别的方法, 所以分情况讨论.
@@ -244,7 +256,11 @@ Line 6: java.lang.ArithmeticException: / by zero
 
 
 
-III
+##### III.斜率的整除截取
+
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-17-%E6%95%B0%E5%AD%A6-1232-%E7%BC%80%E7%82%B9%E6%88%90%E7%BA%BF/slope3.PNG" width="50%">
+
+
 
 ```java
 class Solution {
@@ -304,7 +320,11 @@ class Solution {
 
 
 
-###### V.非代码逻辑问题
+##### V.非代码逻辑问题
+
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-17-%E6%95%B0%E5%AD%A6-1232-%E7%BC%80%E7%82%B9%E6%88%90%E7%BA%BF/slope4.PNG" width="50%">
+
+
 
 ```java
 class Solution {
