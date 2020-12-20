@@ -299,3 +299,27 @@ class Solution {
 
 
 
+
+
+但我还发现了一个东西, 是通过问别人知道的. 一种找最大因数的方法.
+
+给定一个数字, 写一个方法, 找出其最大的因子, 除了 1 和自己本身.
+
+找最大, 和找最小是一样的, 因为, N/min = max
+
+```java
+public int maxDiv(int n) {
+        int minDiv = 0;        
+        for (int i = 2; i <= n; i++) {
+            if (n % i == 0) {
+                minDiv = i;                
+                break;
+            }
+        }
+        if (minDiv == n)
+            return -1;      //  让你去除自己, 如果你检查到你整除的是自己时, 返回 -1
+        return n/minDiv;
+    }
+```
+
+不得不给我同学一个赞.
