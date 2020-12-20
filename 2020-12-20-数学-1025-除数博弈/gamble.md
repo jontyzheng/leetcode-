@@ -81,7 +81,7 @@ class Solution {
 
 
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2608(20201220-144416).PNG" width="50%">
 
 
 
@@ -91,41 +91,37 @@ class Solution {
 
 
 
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2610(20201220-150838).PNG" width="50%">
+
+
+
 比如说: 如果拿到 1 的一方**必然输**.
-
-
-
-<img src="" width="50%">
 
 
 
 拿到 2 的时候出 1 **必赢**.
 
-<img src="" width="50%">
-
 
 
 拿到 4 的时候出 1 **必然赢**.
-
-<img src="" width="50%">
 
 
 
 5 的时候**必然只有 1 可以出**. 
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2607.PNG" width="50%">
 
 
 
 6 的时候出 1 **对方必 LOSE**.
 
-<img src="" width="50%">
+
 
 
 
 7 的时候**必然只能出 1, 然后 LOSE**.
 
-<img src="" width="50%">
+
 
 
 
@@ -133,11 +129,13 @@ class Solution {
 
 通过标注不同的颜色, 我们发现, 前面几次, 似乎偶数的时候都可以出 **1** 然后拿下比赛.
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2610(20201220-150838).PNG" width="100%">
 
 
 
 于是, 通过列举 8, 10, 12 的例子, 然后列出具体的数字, 发现, 必赢.
+
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2612(20201220-150940).PNG" width="70%">
 
 并且, 每次自己拿到的数都是 偶数.
 
@@ -173,9 +171,9 @@ III. 偶数出 1 变奇数抛给对方
 
 
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2613(20201220-151008).PNG" width="50%">
 
-<img src="" width="50%">
+
 
 
 
@@ -188,8 +186,6 @@ III. 偶数出 1 变奇数抛给对方
 3.拿偶数者可以一直拿偶数, 最后总是拿到 2 (然后将死对方). 拿奇数者一直拿奇数, 最后只能拿 1.
 
 也就是说, 偶数者必赢, 奇数必LOSE. 
-
-<img src="" width="50%">
 
 
 
@@ -263,15 +259,13 @@ class Solution {
 
 ###### 解释: 4 的方案不是只有 "拿最大因子" 一种
 
-<img src="" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2606(20201219-213125).PNG" width="50%">
 
 ###### 问题所在: 重新定义"最佳状态"
 
 
 
-###### ii.观察规律
 
-<img src="" width="50%">
 
 
 
