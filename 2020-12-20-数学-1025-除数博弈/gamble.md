@@ -259,7 +259,7 @@ class Solution {
 
 ###### 解释: 4 的方案不是只有 "拿最大因子" 一种
 
-<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2606(20201219-213125).PNG" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2606(20201219-213125).PNG" width="35%">
 
 ###### 问题所在: 重新定义"最佳状态"
 
