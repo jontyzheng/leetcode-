@@ -91,7 +91,7 @@ class Solution {
 
 
 
-<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2610(20201220-150838).PNG" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2610(20201220-150838).PNG" width="100%">
 
 
 
@@ -109,7 +109,7 @@ class Solution {
 
 5 的时候**必然只有 1 可以出**. 
 
-<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2607.PNG" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2607.PNG" width="40%">
 
 
 
@@ -171,7 +171,7 @@ III. 偶数出 1 变奇数抛给对方
 
 
 
-<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2613(20201220-151008).PNG" width="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-20-%E6%95%B0%E5%AD%A6-1025-%E9%99%A4%E6%95%B0%E5%8D%9A%E5%BC%88/IMG_2613(20201220-151008).PNG" width="40%">
 
 
 
