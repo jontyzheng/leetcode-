@@ -16,7 +16,7 @@ tag##
 这五个点如下图所示。组成的橙色三角形是最大的，面积为2。
 ```
 
-<img src="" zoom="50%">
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-24-%E6%95%B0%E5%AD%A6-812-%E6%9C%80%E5%A4%A7%E4%B8%89%E8%A7%92%E5%BD%A2%E9%9D%A2%E7%A7%AF/1027.png" zoom="50%">
 
 
 
