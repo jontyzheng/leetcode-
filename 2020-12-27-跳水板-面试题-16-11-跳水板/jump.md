@@ -82,7 +82,7 @@ class Solution {
 
 最后可能的结果数是 `k+1` 种呢?
 
-<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-27-%E8%B7%B3%E6%B0%B4%E6%9D%BF-%E9%9D%A2%E8%AF%95%E9%A2%98-16-11-%E8%B7%B3%E6%B0%B4%E6%9D%BF/k_1.PNG" zoom="5%"/>
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2020-12-27-%E8%B7%B3%E6%B0%B4%E6%9D%BF-%E9%9D%A2%E8%AF%95%E9%A2%98-16-11-%E8%B7%B3%E6%B0%B4%E6%9D%BF/k_1.PNG" width="50%"/>
 
 
 
