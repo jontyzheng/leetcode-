@@ -144,6 +144,8 @@ class Solution {
 
 #### 讲讲你一开始的想法
 
+<img src="https://raw.githubusercontent.com/jontyzheng/leetcode-journal/master/2021-01-03-%E6%95%B0%E5%AD%A6-970-%E5%BC%BA%E6%95%B4%E6%95%B0/QQ%E5%9B%BE%E7%89%8720210103221808.jpg" width="50%">
+
 一开始想的就是知道它是怎么回事, 但是看到 i 和 j 都要异步变化的时候就不知道怎么做了.
 
 
