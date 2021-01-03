@@ -160,7 +160,7 @@ class Solution {
 
 #### 本期leetcode	
 
-强整数的运行机制.
+强整数的求解过程.
 
 
 
